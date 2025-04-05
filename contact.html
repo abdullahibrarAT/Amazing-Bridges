@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+<link rel="stylesheet" href="contact.css">
+  <title>contactUs </title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body 
+
+
+ 
+ 
+
+class="sub_page">
+ 
+
+<h1 class="page-title">Welcome to Amazing Bridges Contact Page</h1>
+
+
+
+  <!-- contact section -->
+
+  <section class="contact_section ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src="images/contact-img.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="form_container pr-0 pr-lg-5 mr-0 mr-lg-2">
+            <div class="heading_container">
+              <h2>
+                Contact Us
+              </h2>
+          
+                
+            </div>
+            <form action="">
+
+                <script>
+                    // Create particle elements when mouse moves
+                    document.addEventListener('mousemove', function(e) {
+                        createParticle(e.clientX, e.clientY);
+                    });
+            
+                    function createParticle(x, y) {
+                        // Create a new particle element
+                        const particle = document.createElement('div');
+                        particle.classList.add('particle');
+            
+                        // Position the particle at the mouse location
+                        particle.style.left = `${x - 5}px`;  // Adjust for center of particle
+                        particle.style.top = `${y - 5}px`;
+            
+                        // Add particle to body
+                        document.body.appendChild(particle);
+            
+                        // Remove the particle after animation is complete
+                        setTimeout(() => {
+                            particle.remove();
+                        }, 1000);
+                    }
+                </script>
+              <div>
+                <input type="text" placeholder="Name" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="number" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="d-flex ">
+                <button onclick="showPopup()">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script>
+        function showPopup() {
+          alert("Sent successfully ");
+        }
+
+ 
+      </script>
+  </section>
+
+  
+
+   
+
+  
+
+</body>
+
+</html>

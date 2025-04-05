@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  rgb(0, 0, 0);
+}
+
+ 
+ 
+ 
+ 
+
+/* Contact Section */
+.contact_section {
+    padding: 350px 0;
+    background: rgb(0, 0, 0);
+}
+
+ 
+.form_container {
+    background: #e2b5b56b;
+    padding: 40px;
+    box-shadow: 0 0 10px rgb(255, 5, 5);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: 1400px;  
+    margin: 0 auto;
+
+    /* Animation */
+    animation: floatGlow 3s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 0 10px rgb(255, 5, 5);
+    }
+    50% {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgb(185, 73, 73);
+    }
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 0 10px rgb(255, 247, 247);
+    }
+}
+
+.form_container:hover {
+    transform: scale(1.02);
+}
+
+.form_container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* 🔥 Glow Effect on Focus */
+.form_container input:focus {
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.7), 
+                0 0 15px rgba(255, 0, 0, 0.5);
+    outline: none; /* removes default browser outline */
+}
+
+
+.form_container input:focus {
+    border: 1px solid #ff0000;
+    outline: none;
+}
+
+/* Submit Button Animation */
+.form_container button {
+    background: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    /* Red Glow Border Shadow */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6), 
+                0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+
+.form_container button:hover {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 
+                0 0 30px rgba(255, 0, 0, 0.6);
+    transform: scale(1.03);
+}
+
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Info Section - Fade-in Animation */
+.info_section {
+    background-color: rgb(224, 246, 255);
+    color: white;
+    padding: 20px 0;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+.footer_section {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: linear-gradient(270deg, #ff0000, #d1d1d1);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animateGradient 4s ease infinite;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+@keyframes animateGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  /* Particle Styles */
+  .particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    animation: particleAnimation 1s ease-out forwards;
+}
+
+/* Particle Animation */
+@keyframes particleAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
